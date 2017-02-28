@@ -1,0 +1,92 @@
+.sheetContainer{
+    width:100%;
+    height:600px;
+    border:1px solid #cadee9;
+    margin-top:30px;
+    position: relative;
+    .sheetBox{
+        width:98%;
+        height:580px;
+        margin:10px auto;
+        border:1px solid #cadee9;
+        overflow:auto;
+        .sheetInBox{
+            width:3000px;
+            height:1000px;
+            .sheetFixed,.sheetRowTitle{
+                background-color:#dfe8ef;
+                color:#699fc3;
+                font-weight:600;
+            }
+            .sheetFixed{
+                width:350px;
+                height:60px;
+                line-height:60px;
+                position:absolute;
+                z-index:999;
+                .projectName,.totalNo{
+                    float:left;
+                    text-align:center;
+                    border:1px solid #cadee9;
+                    box-sizing:border-box;
+                    margin-top:-1px;
+                }
+                .projectName{
+                    width:250px;
+                }
+                .totalNo{
+                    width:100px;
+                }
+            }
+            .sheetRowTitle{
+                width:2600px;
+                height:60px;
+                padding-left:350px;
+                .rowTitleBuild,.rowTitleNomal{
+                    float:left;
+                    line-height:30px;
+                    text-align:center;
+                    border:1px solid #cadee9;
+                    box-sizing:border-box;
+                }
+                .rowTitleBuild{
+                    width:100px;
+                }
+                .rowTitleNomal{
+                    width:500px;
+                }
+                .rowYearNo{
+                    .yearNo{
+                        float:left;
+                        width:100px;
+                        line-height:30px;
+                        text-align:center;
+                        border:1px solid #cadee9;
+                        box-sizing:border-box;
+                        border-top:none;
+                        margin-top:-2px;
+                    }
+                }
+            }
+            .sheetLineTitle{
+                width:350px;
+                height:auto;
+                overflow:hidden;
+                background-color:#dfe8ef;
+                .lineTitle{
+                    width:250px;
+                    float:left;
+                }
+                .lineTotal{
+                    width:100px;
+                    float:left;
+                }
+                .lineInTitle,.lineInTotal{
+                    height:30px;
+                    line-height:30px;
+                    border:1px solid #cadee9;
+                }
+            }
+        }
+    }
+}
