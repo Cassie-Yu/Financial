@@ -16,6 +16,11 @@ body{
         padding:0;
         list-style:none;
     }
+    input{
+        text-indent:12px;
+        border-radius:5px;
+        outline:none;
+    }
     .header{
         width:100%;
         min-width:900px;
@@ -39,6 +44,8 @@ body{
             margin:0;
             padding:0;
             list-style:none;
+            position:relative;
+            z-index:999;
             .fItem{
                 padding:0 20px;
                 height:64px;
@@ -74,6 +81,10 @@ body{
                         &:hover{
                             background-color:#a3c6e0;
                         }
+                        &:active{
+                            opacity:0.8;
+                            filter: alpha(opacity=80);
+                        }
                     }
                 }
             }            
@@ -104,6 +115,8 @@ body{
                 border-bottom:none;
                 background-color:#66a1cb;
                 display:none;
+                position:relative;
+                z-index:999;
                 .userList{
                     margin:0;
                     padding:0;
@@ -115,6 +128,10 @@ body{
                         border-bottom:1px solid #72aed3;
                         &:hover{
                             background-color:#a3c6e0;
+                        }
+                        &:active{
+                            opacity:0.8;
+                            filter: alpha(opacity=80);
                         }
                         .icon{
                             display:inline-block;
@@ -136,6 +153,7 @@ body{
         width:70%;
         margin:0 auto;
         min-width:850px;
+        position:relative;
         .mainItem{
             margin-bottom:20px;
             .mainItemTitle{
@@ -151,8 +169,27 @@ body{
             }
         }          
     }
-}
-
-input[readonly]{
-    background-color:#f00;
+    .checkBtn{
+        display:inline-block;
+        padding:0 12px;
+        height:30px;
+        line-height:30px;
+        background-color:#66a1cb;
+        color:#fff;
+        text-align:center;
+        border-radius:5px;
+        cursor:pointer;
+        &:hover{
+            background-color:#a3c6e0;
+        }
+        &:active{
+            opacity:0.8;
+            filter: alpha(opacity=80);
+        }
+    }
+    .secrchBtn{        
+        position:absolute;
+        top:0;
+        right:0;
+    }
 }

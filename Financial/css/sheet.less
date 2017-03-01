@@ -1,4 +1,18 @@
-.sheetContainer{
+.btnBox{
+    width:100%;
+    height:auto;
+    margin:20px 0;
+}
+
+.changeBtn{
+    margin:5px;
+}
+
+.hideSheet{
+    display:none;
+}
+
+.sheetContainerA,.sheetContainerB,.sheetContainerC,.sheetContainerD,.sheetContainerE{
     width:100%;
     height:600px;
     border:1px solid #cadee9;
@@ -11,9 +25,9 @@
         border:1px solid #cadee9;
         overflow:auto;
         .sheetInBox{
-            width:3000px;
-            height:1000px;
-            .sheetFixed,.sheetRowTitle{
+            width:2950px;
+            height:auto;
+            .sheetFixed,.sheetRowTitle,.sheetLineTitle{
                 background-color:#dfe8ef;
                 color:#699fc3;
                 font-weight:600;
@@ -23,7 +37,7 @@
                 height:60px;
                 line-height:60px;
                 position:absolute;
-                z-index:999;
+                z-index:990;
                 .projectName,.totalNo{
                     float:left;
                     text-align:center;
@@ -73,6 +87,7 @@
                 height:auto;
                 overflow:hidden;
                 background-color:#dfe8ef;
+                float:left;
                 .lineTitle{
                     width:250px;
                     float:left;
@@ -85,7 +100,28 @@
                     height:30px;
                     line-height:30px;
                     border:1px solid #cadee9;
+                    text-align:center;
                 }
+            }
+            .sheetContant{
+                width:2600px;
+                height:auto;
+                padding-left:350px;
+                table{
+                    border-collapse:collapse;
+                    tr{
+                        height:32px;
+                        td{
+                            height:31px;
+                            line-height:31px;
+                            padding:0;
+                            width:100px;
+                            border:1px solid #cadee9;
+                            box-sizing:border-box;
+                            text-align:center;
+                        }
+                    }
+                }                    
             }
         }
     }

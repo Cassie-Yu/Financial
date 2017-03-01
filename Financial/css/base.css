@@ -18,6 +18,11 @@ body ul {
   padding: 0;
   list-style: none;
 }
+body input {
+  text-indent: 12px;
+  border-radius: 5px;
+  outline: none;
+}
 body .header {
   width: 100%;
   min-width: 900px;
@@ -42,6 +47,8 @@ body .header .menu {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
+  z-index: 999;
 }
 body .header .menu .fItem {
   padding: 0 20px;
@@ -81,6 +88,10 @@ body .header .menu .fItem .menut .fItemt {
 body .header .menu .fItem .menut .fItemt:hover {
   background-color: #a3c6e0;
 }
+body .header .menu .fItem .menut .fItemt:active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
 body .header .userBox {
   width: 50px;
   height: inherit;
@@ -108,6 +119,8 @@ body .header .userBox .userContent {
   border-bottom: none;
   background-color: #66a1cb;
   display: none;
+  position: relative;
+  z-index: 999;
 }
 body .header .userBox .userContent .userList {
   margin: 0;
@@ -123,6 +136,10 @@ body .header .userBox .userContent .userList .userItem {
 body .header .userBox .userContent .userList .userItem:hover {
   background-color: #a3c6e0;
 }
+body .header .userBox .userContent .userList .userItem:active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
 body .header .userBox .userContent .userList .userItem .icon {
   display: inline-block;
   width: 25%;
@@ -136,6 +153,7 @@ body .mainContainer {
   width: 70%;
   margin: 0 auto;
   min-width: 850px;
+  position: relative;
 }
 body .mainContainer .mainItem {
   margin-bottom: 20px;
@@ -151,6 +169,26 @@ body .mainContainer .mainItem .mainItemTitle {
   text-indent: 0.5em;
   font-weight: 600;
 }
-input[readonly] {
-  background-color: #f00;
+body .checkBtn {
+  display: inline-block;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #66a1cb;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .checkBtn:hover {
+  background-color: #a3c6e0;
+}
+body .checkBtn:active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+body .secrchBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
