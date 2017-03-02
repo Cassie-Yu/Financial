@@ -38,3 +38,7 @@
   text-align: left;
   font-zise: 0.85em;
 }
+input[readonly] {
+  background-color: #eee;
+  cursor: no-drop;
+}
