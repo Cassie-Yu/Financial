@@ -25,7 +25,7 @@ body input {
 }
 body .header {
   width: 100%;
-  min-width: 900px;
+  min-width: 1200px;
   height: 64px;
   background-color: #66a1cb;
   font-size: 0;
@@ -152,7 +152,7 @@ body .header .userBox:hover .userContent {
 body .mainContainer {
   width: 70%;
   margin: 0 auto;
-  min-width: 850px;
+  min-width: 1200px;
   position: relative;
 }
 body .mainContainer .mainItem {

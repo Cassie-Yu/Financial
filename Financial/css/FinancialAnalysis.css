@@ -34,9 +34,12 @@
 }
 .tableBox .mainItemContent .units {
   display: inline-block;
-  width: 200px;
+  width: 100px;
   text-align: left;
-  font-size: 0.85em;
+  font-zise: 0.85em;
+}
+.tableBox .mainItemContent .specialUnits {
+  width: 200px;
 }
 input[readonly] {
   background-color: #eee;
