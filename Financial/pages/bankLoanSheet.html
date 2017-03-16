@@ -7,6 +7,9 @@
     <link rel='shortcut icon' href='../imgs/user.jpg'>
 <!--    阿里图标库引入-->
     <link rel="stylesheet" href="../libs/iconfont/iconfont.css">
+<!--    bootstrap相关文件引入-->
+    <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/bootstrap/bootstrap-datepicker.min.css">
 <!--    页面基本css文件引入-->
     <link rel="stylesheet" href="../css/base.css">
 <!--    表格相关css文件引入-->
@@ -32,7 +35,7 @@
                         <td>购货相关税收支付</td>
                         <td><input type="text"></td>
                         <td>起租日</td>
-                        <td><input type="text"></td>
+                        <td><input type="text" class="form_datetime" readonly></td>
                     </tr>
                     <tr>
                         <td>租赁利率</td>
@@ -68,7 +71,7 @@
                         <td>保证金存款利率</td>
                         <td><input type="text"></td>
                         <td>首期付租日</td>
-                        <td><input type="text"></td>
+                        <td><input type="text" class="form_datetime" readonly></td>
                     </tr>
                     <tr>
                         <td>保证金率</td>
@@ -353,6 +356,12 @@
     
 <!--    jQuery库文件引入-->
     <script src="../libs/jquery/jquery.min.js"></script>
+<!--    bootstrap相关文件引入-->
+    <script src="../libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap/bootstrap-datepicker.min.js"></script>
+    <script src="../libs/bootstrap/bootstrap-datepicker-zh.js"></script>
+<!--    时间选择器js文件引入-->
+    <script src="../js/timepicker.js"></script>
 <!--    页面基本js文件引入-->
     <script src="../js/base.js"></script>
 <!--    表格变化相关js文件引入-->

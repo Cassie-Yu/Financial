@@ -35,9 +35,14 @@
 .sheetLineTitle {
   width: 250px !important;
 }
+.sheetFixed .lineInTitle,
+.sheetLineTitle .lineInTitle {
+  height: 32px !important;
+  line-height: 32px !important;
+}
 .sheetRowTitle,
 .sheetContant {
-  width: 2100px !important;
+  width: 2350px !important;
   padding-left: 250px !important;
 }
 .sheetRowTitle .yearNo,
