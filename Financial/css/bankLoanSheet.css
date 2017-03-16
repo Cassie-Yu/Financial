@@ -11,6 +11,15 @@
   height: 45px;
   border: 1px solid #cadee9;
   text-align: center;
+  position: relative;
+}
+.tableBox table td .units {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+}
+.tableBox table td .form_datetime {
+  background-color: #fff !important;
 }
 .tableBox table td input,
 .tableBox table td select {
@@ -23,7 +32,7 @@
 .tableBox table td select {
   text-indent: 8px;
 }
-.tableBox table td input[disabled] {
+.tableBox table td input[readonly] {
   background-color: #eee;
   cursor: no-drop;
 }
