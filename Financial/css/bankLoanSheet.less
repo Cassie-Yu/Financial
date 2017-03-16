@@ -5,9 +5,23 @@
         border-collapse:collapse;
         td{
             width:120px;
-            height:30px;
+            height:45px;
             border:1px solid #cadee9;
             text-align:center;
+            input,select{
+                width:100%;
+                height:45px;
+                border:none;
+                outline:none;
+                border-radius:0;
+            }
+            select{
+                text-indent:8px;
+            }
+            input[disabled]{
+                background-color:#eee;
+                cursor:no-drop;
+            }
         }
         td:nth-child(odd){
             color:#699fc3;

@@ -8,9 +8,24 @@
 }
 .tableBox table td {
   width: 120px;
-  height: 30px;
+  height: 45px;
   border: 1px solid #cadee9;
   text-align: center;
+}
+.tableBox table td input,
+.tableBox table td select {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+.tableBox table td select {
+  text-indent: 8px;
+}
+.tableBox table td input[disabled] {
+  background-color: #eee;
+  cursor: no-drop;
 }
 .tableBox table td:nth-child(odd) {
   color: #699fc3;
